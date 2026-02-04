@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NavbarLinks({links}) {
+export default function Navbarlinks({links}) {
     console.log(links)
   return (
      <div className="group inline-block relative cursor-pointer">

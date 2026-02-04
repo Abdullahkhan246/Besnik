@@ -3,7 +3,7 @@ import logo from '../../assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBurger } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import NavbarLinks from '../navbarlinks/Navbarlinks';
+import NavbarLinks from '../navbarlinks/NavbarLinks';
 
 export default function Navbar() {
     let navLinks = ["Home", "About us", "Features", "Contact"];
@@ -20,11 +20,11 @@ export default function Navbar() {
                     <Link to="/">
 
                         <div className="group inline-block relative cursor-pointer">
-                        <div className=" pb-1 mb-1 ">
-                            <img src={logo} alt="Logo" className="h-10 w-auto" />
+                            <div className=" pb-1 mb-1 ">
+                                <img src={logo} alt="Logo" className="h-10 w-auto" />
+                            </div>
+                            <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-sky-950 transition-all duration-300 group-hover:w-full"></span>
                         </div>
-                        <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-sky-950 transition-all duration-300 group-hover:w-full"></span>
-                    </div>
                     </Link>
 
                     <button
